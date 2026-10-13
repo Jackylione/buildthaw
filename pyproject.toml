@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "buildthaw"
+version = "0.1.0"
+description = "Clear TypeScript build-info caches while keeping compiled outputs"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+classifiers = [
+  "Environment :: Console",
+  "Operating System :: POSIX",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Build Tools",
+]
+
+[project.scripts]
+buildthaw = "buildthaw:main"
+
+[tool.setuptools]
+py-modules = ["buildthaw"]
